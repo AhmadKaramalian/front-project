@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fa">
+    <head>
+        <title>تماس با ما</title>
+        <meta charset="utf-8">
+
+        <style>
+            
+            :lang(fa){
+                direction: rtl;
+            }
+            label{
+                text-align: right;
+            }
+            input, textarea{
+                width: 50%;
+                font-family:'Arial Narrow Bold', sans-serif;
+            }
+            textarea{
+                height: 6em;
+            }
+            body{
+                margin: auto;
+                font-family:'Arial Narrow Bold', sans-serif;
+                padding:  10% ;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+<form>
+    <h1>
+        تماس با ما
+    </h1>    
+    <label for="title">عنوان:</label>
+    <br>
+    <input type="text" id="title">
+    <br>
+    <label for="email">ایمیل:</label>
+    <br>
+    <input type="email" id="title" placeholder="مثال:ahmad@gmail.com">
+    <br>
+    <label for="textbody">متن پیام:</label>
+    <br>
+    <textarea id="textbody"></textarea>
+    </body>
+    <input type="submit" value="ارسال">
+</form>
+</html>
