@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fa">
+    <head>
+        <title>افزودن محصول</title>
+        <meta charset="utf-8">
+
+        <style>
+            
+            :lang(fa){
+                direction: rtl;
+            }
+            label{
+                text-align: right;
+            }
+            .btn {
+  background-color:#638d61;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer
+            }
+ input[type=text],[type=tel],[type=email],[type=password],[type=textarea]{
+ height:30px;
+ 
+ }
+			.btn:hover {
+			border: 5px solid #d4e88f;
+			  color: #d4e88f;
+			}
+           input[type=text],[type=tel],[type=email],[type=password],[type=submit],[type=textarea], textarea{
+			border:none;
+			border-radius:15px;
+                width: 50%;
+                font-family: Impact, Haettenschweiler,
+                 'Arial Narrow Bold', sans-serif;
+            }
+            textarea{
+                height: 6em;
+            }
+            body{
+			text-align:center;
+                margin: auto;
+                font-family: Impact, Haettenschweiler,
+                 'Arial Narrow Bold', sans-serif;
+                padding: 2% 10% ;
+                background-color: #4d5434;
+				color:#aaaaaa;
+            }
+          
+        </style>
+    </head>
+
+    <body>
+<form action="addproduct_answer.php" method="post">
+    <h1>
+  افزودن محصول
+    </h1>    
+    <label for="name">نام محصول:</label>
+    <br>
+    <input type="text" id="name" name="name" required>
+	<br>
+	<label>جنسیت</label>
+	    <br>
+	 <label for="man"> مردانه:</label>
+    <input type="radio" id="man" name="gender" value="man">
+    
+    <label for="women"> زنانه:</label>
+    <input type="radio" id="women" name="gender" value="womenmen"checked>
+    <br>
+	    <br>
+
+    <label for="textarea">: توضیحات</label>
+    <br>
+    <textarea id="textarea" name="textarea" required ></textarea>
+    <br>
+	<label>رنگ های موجود</label>
+	    <br>
+
+    <label for="blue"> ابی:</label>
+    <input type="checkbox" id="blue" name="color[]" value="blue" checked>
+	 <label for="green"> سبز:</label>
+    <input type="checkbox" id="green" name="color[]" value="green" >
+	 <label for="red"> قرمز:</label>
+    <input type="checkbox" id="red" name="color[]" value="red">
+    <br>
+		<label>سایز</label>
+	    <br>
+
+    <label for="larg"> larg:</label>
+    <input type="checkbox" id="larg" name="size[]" value="larg" checked>
+	 <label for="XL"> XL:</label>
+    <input type="checkbox" id="XL" name="size[]" value="XL" >
+	 <label for="XXL"> XXL:</label>
+    <input type="checkbox" id="XXL" name="size[]" value="XXL">
+    <br>
+      <input class="btn" type="submit" value="افزودن">
+</form>
+    </body>
+
+</html>
