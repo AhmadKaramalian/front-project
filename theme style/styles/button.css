@@ -1,0 +1,4 @@
+.btn{
+    background-color: var(--md-sys-color-primary-light);
+    color: var(--on-primary);
+}

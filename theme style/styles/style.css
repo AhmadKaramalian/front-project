@@ -1,0 +1,7 @@
+@import "styles.css";
+@import "button.css";
+
+:root{
+    --primary:  var(--md-sys-color-primary-light);
+    --on-primary: var(--md-sys-color-on-primary-light);
+}
